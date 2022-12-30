@@ -1,22 +1,177 @@
 @import "./utils/variable";
 @import "./base/setup";
+@import "./base/margin.scss";
 
-@import "./layout\ \(blocs\ réutilisables\)/header.scss";
+
+@import "./layout/header.scss";
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
 
 nav {
     display: flex;
     justify-content: center;
     padding: 16px 0px;
-    background-color:  rgb(241, 241, 241);
+    background-color:  rgba(235, 235, 235, 0.87);
     position: relative;
     z-index: 0;
-
     #location-pin {
-        margin-right: 10px;
+        margin-right: 15px;
     }
-
     input {
         all: unset;
-        width: 160px;
+        width: 145px;
+    }
+}
+
+
+.sub-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: $secondary-background-color;
+    .slogan {
+        padding-top: 45px;
+        font-size: 30px;
+    }
+    .sub-slogan {
+        padding-top: 15px;
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+}
+
+@import "./components/explore-btn.scss";
+
+
+.fonctionnement {
+    justify-content: center;
+    align-items: center;
+    &__titre {
+        font-size: 25px;
+        padding-top: 45px;
+        padding-bottom: 30px;
+    }
+    &__liste {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding-bottom: 55px;
+        margin-left: 14px;
+
+        &__element {
+            display: flex;
+            border-radius: 20px;
+            list-style: decimal;
+            list-style-position: inside;
+            background-color: $secondary-background-color;
+            box-shadow: $components-shadow;
+            align-items: center;
+            position: relative;
+
+            &__numbers {
+                position: absolute;
+                left: -15px;
+                padding: 5px 10px;
+                background-color: $primary-color;
+                border-radius: 50%;
+                color: #fff;
+                
+            }
+            
+            &__icon {
+                margin-left: 30px;
+                color: $primary-color;
+            }   
+
+            &__text {
+                margin: 25px 30px 25px 20px
+            }
+            
+        }
+    }
+}
+
+
+
+.restaurants {
+    background-color: $secondary-background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding-bottom: 50px;
+            }
+
+    &__title {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+}
+
+ 
+@import "./layout/restaurants-blocs";
+
+@import "./layout/footer";
+
+
+
+
+
+//mediaqueries
+
+@media screen and (min-width: 1024px) {
+    
+    //change of order
+    .fonctionnement {order: 2;}
+    .sub-header {order: 1;}
+    .location-btn {order: 3;}
+    .restaurants {order: 4;}
+
+
+    .fonctionnement {
+        box-shadow: $components-shadow;
+        &__liste {
+            flex-direction: row;
+            justify-content: space-between;
+            &__element {
+                width: 30%;
+            }
+        }
+    }
+
+    .restaurants__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 36px;
+    }
+
+    .restaurants__bloc {
+        width: 48%;
+    }
+
+    footer {
+        h5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
     }
 }

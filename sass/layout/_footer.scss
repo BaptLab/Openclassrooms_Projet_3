@@ -1,0 +1,23 @@
+@import "../utils/variable";
+
+footer {
+    background-color: $footer-color;
+    color: #fff;
+    h5 {
+        padding: 20px 0px;
+        font-family: $titles-font;
+    }
+}
+
+
+.list {
+    padding-bottom: 30px;
+    &__element {
+        display: flex;
+        padding-bottom: 8px;
+
+        &__icon {
+            padding-right: 10px;
+        }
+    }
+}

@@ -5,7 +5,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 2px 5px rgb(194, 194, 194);
+    box-shadow: $components-shadow;
     position: relative;
     z-index: 1;
     #logo {
