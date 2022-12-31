@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  box-sizing: border-box;
+  font-family: Roboto;
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+  font-size: inherit;
+}
+
+.sub-header {
+  padding: 0% 7%;
+}
+
+.fonctionnement, .restaurants, footer, .menu {
+  padding: 0% 5%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 10px rgba(179, 179, 179, 0.719);
+  position: relative;
+  z-index: 1;
+}
+header #logo {
+  margin-top: 17px;
+  margin-bottom: 10px;
+  font-family: Shrikhand;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+}
+footer h5 {
+  padding: 20px 0px;
+  font-family: Shrikhand;
+}
+
+.list {
+  padding-bottom: 30px;
+}
+.list__element {
+  display: flex;
+  padding-bottom: 8px;
+}
+.list__element__icon {
+  padding-right: 10px;
+}
+
+.gradient-btn {
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 18px 23px;
+  border-radius: 30px;
+  color: white;
+  margin-bottom: 55px;
+  box-shadow: 0px 5px 10px rgba(179, 179, 179, 0.719);
+}
+
+.food h3 {
+  margin-bottom: 10px;
+}
+.food__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.food__list__element {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(179, 179, 179, 0.719);
+  padding: 13px;
+}
+.food__list__element__text-zone {
+  margin-right: 30px;
+}
+.food__list__element__text-zone h4 {
+  margin-bottom: 3px;
+}
+.food__list__element__price-zone {
+  display: flex;
+  align-items: flex-end;
+}
+
+/*# sourceMappingURL=style2.css.map */

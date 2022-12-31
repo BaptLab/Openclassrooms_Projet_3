@@ -1,0 +1,34 @@
+@import "../utils/variable";
+
+.food {
+    h3 {
+        margin-bottom: 10px;
+       
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &__element {
+            display: flex;
+            justify-content: space-between;
+            border-radius: 20px;
+            box-shadow: $components-shadow;
+            padding: 13px;
+
+            &__text-zone {
+                margin-right: 30px;
+
+                h4 {
+                    margin-bottom: 3px;
+                }
+            }
+
+            &__price-zone {
+                display: flex;
+                align-items:flex-end ;
+            }
+        }
+    }
+}

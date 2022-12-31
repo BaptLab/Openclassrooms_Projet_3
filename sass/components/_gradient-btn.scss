@@ -1,7 +1,8 @@
 @import "../utils/variable";
+@import "../utils/mixins";
 
-.explore-btn {
-    background: linear-gradient($secondary-color,$primary-color);
+.gradient-btn {
+    @include gradient;
     padding: 18px 23px;
     border-radius: 30px;
     color: white;
