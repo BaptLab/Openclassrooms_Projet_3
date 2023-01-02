@@ -1,0 +1,48 @@
+@import "../utils/variable";
+
+.back-arrow {
+    position: absolute;
+    left:20px;
+    top: 19px;
+}
+
+
+.restaurant-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: absolute;
+    z-index: -3;
+
+}
+
+.menu {
+    margin-top: 200px;
+    background-color: $secondary-background-color;
+    border-radius: 40px 40px 0px 0px;
+    .top-menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 35px 0px;
+
+        h2 {
+            font-size: 1.7em;
+            font-family: $titles-font;
+        }
+
+        i {
+            display: flex;
+            align-items: center;
+            padding-right: 15px;
+        }
+    }
+}
+
+.order {
+    display: flex;
+    justify-content: center;
+    #order-btn {
+        padding: 18px 50px;
+        margin-bottom: 40px;
+    }
+}

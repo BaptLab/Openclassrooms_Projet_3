@@ -12,17 +12,18 @@
 
     <body>
         <header>
-            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-left back-arrow"></i>
             <h1 id="logo">ohmyfood</h1>
         </header>
-        <img alt="photo du restaurant À la française" src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+        <img class="restaurant-img" alt="photo du restaurant À la française" src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
         <main class="menu">
             <div class="top-menu">
                 <h2 class="top-menu__restaurant-name">À la française</h2>
                 <i class="fa-regular fa-heart fa-xl top-menu__restaurant-name"></i>
             </div>
             <section id="starters" class="food">
-                <h3>ENTREES</h3>
+                <h3 class="food__categorie">ENTRÉES</h3>
+                <div class="section-line"></div>
                 <div class="food__list">
                     <article class="food__list__element">
                         <div class="food__list__element__text-zone">
@@ -53,8 +54,9 @@
                     </article>
                 </div>
             </section>
-            <section class="main-dish">
-                <h3>Entrées</h3>
+            <section id="main-dish" class="food">
+                <h3 class="food__categorie">PLATS</h3>
+                <div class="section-line"></div>
                 <div class="food__list">
                     <article class="food__list__element">
                         <div class="food__list__element__text-zone">
@@ -85,8 +87,9 @@
                     </article>
                 </div>
             </section>
-            <section class="dessert">
-                <h3>Entrées</h3>
+            <section id="desserts" class="food">
+                <h3 class="food__categorie">DESSERTS</h3>
+                <div class="section-line"></div>
                 <div class="food__list">
                     <article class="food__list__element">
                         <div class="food__list__element__text-zone">
@@ -117,7 +120,9 @@
                     </article>
                 </div>
             </section>
-            <a class="gradient-btn">Commander</a>
+            <section class="order">
+            <a id="order-btn" class="gradient-btn">Commander</a>
+            </section>
         </main>
             <footer>
                 <h5>ohmyfood</h5>
