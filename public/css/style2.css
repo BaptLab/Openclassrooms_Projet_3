@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sub-header {
-  padding: 0% 7%;
+  padding: 0% 9%;
 }
 
 .fonctionnement, .restaurants, footer, .menu {
@@ -27,20 +27,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+header--shadow {
   box-shadow: 0px 5px 10px rgba(179, 179, 179, 0.719);
-  position: relative;
-  z-index: 1;
 }
 header #logo {
   margin-top: 17px;
   margin-bottom: 10px;
   font-family: Shrikhand;
 }
-
-.back-arrow {
-  position: absolute;
-  left: 20px;
-  top: 19px;
+header h1 {
+  font-size: 2em;
 }
 
 .restaurant-img {
@@ -52,7 +49,7 @@ header #logo {
 }
 
 .menu {
-  margin-top: 200px;
+  margin-top: 210px;
   background-color: rgb(247, 246, 246);
   border-radius: 40px 40px 0px 0px;
 }
@@ -62,7 +59,7 @@ header #logo {
   padding: 35px 0px;
 }
 .menu .top-menu h2 {
-  font-size: 1.7em;
+  font-size: 1.8em;
   font-family: Shrikhand;
 }
 .menu .top-menu i {
@@ -75,10 +72,6 @@ header #logo {
   display: flex;
   justify-content: center;
 }
-.order #order-btn {
-  padding: 18px 50px;
-  margin-bottom: 40px;
-}
 
 footer {
   background-color: #353535;
@@ -87,6 +80,7 @@ footer {
 footer h5 {
   padding: 20px 0px;
   font-family: Shrikhand;
+  font-size: 1.2em;
 }
 
 .list {
@@ -107,6 +101,10 @@ footer h5 {
   color: white;
   margin-bottom: 55px;
   box-shadow: 0px 5px 10px rgba(179, 179, 179, 0.719);
+}
+.gradient-btn--small {
+  padding: 18px 50px;
+  margin-bottom: 40px;
 }
 
 .food__categorie {
@@ -142,6 +140,79 @@ footer h5 {
   display: flex;
   align-items: flex-end;
   font-weight: bold;
+}
+
+.back-arrow {
+  position: absolute;
+  left: 25px;
+  color: rgb(65, 65, 65);
+}
+
+@media screen and (min-width: 1024px) {
+  .food__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .food__list__element {
+    width: 32%;
+  }
+}
+/*.full-menu {
+    display: flex;
+    justify-content: space-between;
+    .food {
+        width: 31%;
+    }
+} */
+.spinner {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: rgb(247, 246, 246);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: disappear 0.1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+.spinner__dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.spinner__dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #9356DC transparent #9356DC transparent;
+  animation: loading 0.5s linear;
+}
+
+@keyframes disappear {
+  0% {
+    display: block;
+    opacity: 1;
+    z-index: auto;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    z-index: -2;
+  }
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1000deg);
+  }
 }
 
 /*# sourceMappingURL=style2.css.map */

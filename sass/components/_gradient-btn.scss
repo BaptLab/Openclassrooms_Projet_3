@@ -8,4 +8,10 @@
     color: white;
     margin-bottom: 55px;
     box-shadow: $components-shadow;
+
+    &--small {
+        padding: 18px 50px;
+        margin-bottom: 40px;
+    }
+    
 }

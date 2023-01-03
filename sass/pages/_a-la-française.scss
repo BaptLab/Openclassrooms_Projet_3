@@ -1,11 +1,5 @@
 @import "../utils/variable";
 
-.back-arrow {
-    position: absolute;
-    left:20px;
-    top: 19px;
-}
-
 
 .restaurant-img {
     width: 100%;
@@ -17,7 +11,7 @@
 }
 
 .menu {
-    margin-top: 200px;
+    margin-top: 210px;
     background-color: $secondary-background-color;
     border-radius: 40px 40px 0px 0px;
     .top-menu {
@@ -26,7 +20,7 @@
         padding: 35px 0px;
 
         h2 {
-            font-size: 1.7em;
+            font-size: 1.8em;
             font-family: $titles-font;
         }
 
@@ -41,8 +35,4 @@
 .order {
     display: flex;
     justify-content: center;
-    #order-btn {
-        padding: 18px 50px;
-        margin-bottom: 40px;
-    }
 }

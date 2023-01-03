@@ -5,12 +5,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: $components-shadow;
-    position: relative;
-    z-index: 1;
+
+    &--shadow {
+        box-shadow: $components-shadow;
+       
+    }
+
     #logo {
         margin-top: 17px;
         margin-bottom: 10px;
         font-family: $titles-font;
+    }
+    h1 {
+        font-size: 2em;
     }
 }

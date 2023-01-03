@@ -1,0 +1,57 @@
+@import "../utils/variable";
+
+.spinner {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: $secondary-background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: disappear 0.1s;
+    animation-delay: $spinner-delay;
+    animation-fill-mode: forwards;
+
+    &__dual-ring {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+      }
+      &__dual-ring:after {
+        content: " ";
+        display: block;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border-radius: 50%;
+        border: 6px solid #fff;
+        border-color: $primary-color transparent $primary-color transparent;
+        animation: loading $spinner-delay linear;
+      }
+      
+}
+
+@keyframes disappear {
+    0% {
+        display: block;
+        opacity: 1;
+        z-index: auto;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+        z-index: -2;
+    }
+}
+
+@keyframes loading {
+    
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(1000deg);
+    }
+}
