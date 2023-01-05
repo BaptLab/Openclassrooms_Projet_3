@@ -17,7 +17,9 @@ footer {
         display: flex;
         padding-bottom: 8px;
 
-        &__icon {
+        i {
+            display: flex;
+            align-items: center;
             padding-right: 10px;
         }
     }

@@ -1,6 +1,7 @@
 @media screen and (min-width: 1024px) {
-    //horizontal menu elements
-    .food__list {
+
+//horizontal menu elements
+   /* .food__list {
         flex-direction: row;
         justify-content: space-between;
 
@@ -8,17 +9,17 @@
             width: 32%;
         }
     }
-
-
-}
+    */
 
 
 //horizontal menu set-up
 
-/*.full-menu {
+.full-menu {
     display: flex;
     justify-content: space-between;
     .food {
         width: 31%;
     }
-} */
+} 
+
+}

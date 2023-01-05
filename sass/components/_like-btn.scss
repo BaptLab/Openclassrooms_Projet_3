@@ -1,0 +1,37 @@
+@import "../utils/variable";
+
+.like-btn {
+    display: flex;
+    align-items: center; 
+    padding-right: 10px;
+    
+    i {
+        
+        &:hover {
+            
+            animation: liked-btn 0.3s ease-in 0.1s normal forwards;
+            @keyframes liked-btn {
+                0% {
+                    color: black;
+                }
+            
+                30% {
+                    scale: (0.8);
+                }
+            
+                75% {
+                    
+                    scale: (1.2);
+                }
+            
+                100% {
+            
+                    color: $primary-color;
+                }
+            }
+        }
+       
+        }
+    }
+
+

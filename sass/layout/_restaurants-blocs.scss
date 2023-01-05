@@ -49,18 +49,8 @@
                     font-size: 0.95em;
                 }
             }
-
-            &__heart {
-                padding: 8px 15px;    
-                i {
-                    line-height: normal;
-                    &:hover {
-                       background: linear-gradient($primary-color,$secondary-color);
-                    }
-                }
-
             }
         }
         
     }
-}
+

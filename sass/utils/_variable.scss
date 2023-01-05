@@ -1,7 +1,9 @@
-//colors
+//components-colors
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color:#99E2D0;
+$new-tag-text-color:#008766;
+$neutral-state : #7E7E7E;
 
 
 //fonts
@@ -13,10 +15,10 @@ $components-shadow :0px 5px 10px rgba(179, 179, 179, 0.719);
 
 //Others
 
-$new-tag-text-color:#008766;
-$spinner-delay : 0.5s;
 
-//background 
+$spinner-delay : 1.5s;
+
+//background-colors
 
 $footer-color:#353535;
 $secondary-background-color:rgb(247, 246, 246);

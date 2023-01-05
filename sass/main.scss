@@ -1,5 +1,6 @@
 //Set-up
 @import "./utils/variable";
+@import "./utils/mixins";
 @import "./base/setup";
 @import "./base/margin.scss";
 
@@ -9,9 +10,21 @@
 @import "./pages/homepage.scss";
 @import "./layout/restaurants-blocs.scss";
 @import "./layout/footer.scss";
+@import "./components/like-btn";
+@import "./layout/menu-blocs";
+@import "./components/back-btn";
+
+//pages 
+@import "./pages/a-la-française";
+
+//spinner
+@import "./layout/spinner";
 
 //mediaqueries
 @import "./desktop/mq-restaurants-blocs.scss";
+@import "./desktop/mq-menu-blocs";
+
+
 
 
 

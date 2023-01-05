@@ -1,3 +1,7 @@
 @mixin gradient {
     background: linear-gradient($secondary-color,$primary-color);
 }
+
+@mixin slow-appearing-animation {
+    animation: slow-appearing 0.8s ease-out $spinner-delay normal both;
+}
