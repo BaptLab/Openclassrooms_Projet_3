@@ -104,6 +104,12 @@ nav {
         flex-direction: column;
         gap: 18px;
         padding-bottom: 50px;
+
+        .like-btn {
+            position: absolute;
+            bottom: 26px;
+            right: 25px;  
+        }
             }
 
     &__title {
@@ -113,3 +119,4 @@ nav {
         font-weight: bold;
     }
 }
+

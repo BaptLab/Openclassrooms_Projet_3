@@ -1,37 +1,45 @@
 @import "../utils/variable";
 
 .like-btn {
-    display: flex;
-    align-items: center; 
-    padding-right: 10px;
     
+
     i {
+        color: #fff;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
         
         &:hover {
-            
-            animation: liked-btn 0.3s ease-in 0.1s normal forwards;
-            @keyframes liked-btn {
-                0% {
-                    color: black;
+         animation: liked-btn $like-animation-duration ease-in 0.1s normal forwards;
                 }
-            
-                30% {
-                    scale: (0.8);
-                }
-            
-                75% {
-                    
-                    scale: (1.2);
-                }
-            
-                100% {
-            
-                    color: $primary-color;
-                }
-            }
+
+        &::before {
+            content: "\f004";
+            font-family: FontAwesome;
+            @include gradient; 
+            -webkit-background-clip: text;
         }
-       
+        
+        
+    }
+}
+
+    @keyframes liked-btn {
+        0% {
+            
+        }
+    
+        30% {
+            scale: (0.8);
+        }
+    
+        75% {
+            
+            scale: (1.2);
+        }
+    
+        100% {
+            
+            color: transparent;
+            
         }
     }
-
-

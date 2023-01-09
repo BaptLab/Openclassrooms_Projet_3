@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     
     //change of order
     .fonctionnement {order: 2;}
@@ -23,10 +23,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 36px;
+
     }
 
     .restaurants__bloc {
-        width: 48%;
+        width: 47%;
     }
 
     footer {

@@ -11,16 +11,20 @@
   font-size: inherit;
 }
 
+input {
+  all: inherit;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
 .sub-header {
-  padding: 0% 9%;
+  padding: 0 9%;
 }
 
 .fonctionnement, .restaurants, footer, .menu {
-  padding: 0% 5%;
+  padding: 0 25px;
 }
 
 header {
@@ -51,6 +55,10 @@ header h1 {
 .gradient-btn--small {
   padding: 18px 50px;
   margin-bottom: 40px;
+}
+.gradient-btn:hover {
+  background: linear-gradient(#ff88de, #9b63df);
+  box-shadow: 0px 8px 15px rgba(150, 150, 150, 0.719);
 }
 
 main {
@@ -152,6 +160,11 @@ nav input {
   gap: 18px;
   padding-bottom: 50px;
 }
+.restaurants__container .like-btn {
+  position: absolute;
+  bottom: 26px;
+  right: 25px;
+}
 .restaurants__title {
   padding-top: 50px;
   padding-bottom: 20px;
@@ -165,6 +178,7 @@ nav input {
   width: auto;
   border-radius: 15px;
   box-shadow: 0px 5px 10px rgba(179, 179, 179, 0.719);
+  position: relative;
 }
 .restaurants__bloc__image-zone {
   position: relative;
@@ -225,18 +239,22 @@ footer h5 {
   padding-right: 10px;
 }
 
-.like-btn {
-  display: flex;
-  align-items: center;
-  padding-right: 10px;
+.like-btn i {
+  color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 .like-btn i:hover {
   animation: liked-btn 0.3s ease-in 0.1s normal forwards;
 }
+.like-btn i::before {
+  content: "\f004";
+  font-family: FontAwesome;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+}
+
 @keyframes liked-btn {
-  0% {
-    color: black;
-  }
   30% {
     scale: 0.8;
   }
@@ -244,21 +262,20 @@ footer h5 {
     scale: 1.2;
   }
   100% {
-    color: #9356DC;
+    color: transparent;
   }
 }
-
 .food {
-  animation: slow-appearing 0.8s ease-out 1.5s normal both;
+  animation: slow-appearing 0.8s ease-out 0.2s normal both;
 }
 .food:nth-child(1) {
-  animation-delay: 1.7s;
+  animation-delay: 0.4s;
 }
 .food:nth-child(2) {
-  animation-delay: 2s;
+  animation-delay: 0.7s;
 }
 .food:nth-child(3) {
-  animation-delay: 2.3s;
+  animation-delay: 1s;
 }
 @keyframes slow-appearing {
   0% {
@@ -271,13 +288,16 @@ footer h5 {
   }
 }
 .food__categorie {
-  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
 }
-.food .section-line {
+.food__categorie::after {
+  content: "";
   background-color: #99E2D0;
   height: 3px;
   width: 40px;
   margin-bottom: 12px;
+  margin-top: 5px;
 }
 .food__list {
   display: flex;
@@ -287,22 +307,78 @@ footer h5 {
 }
 .food__list__element {
   display: flex;
-  justify-content: space-between;
+  width: auto;
+  position: relative;
+  overflow: hidden;
   border-radius: 20px;
   box-shadow: 0px 5px 10px rgba(179, 179, 179, 0.719);
+  border-radius: 20px;
+}
+.food__list__element:hover .food__list__element__container {
+  width: calc(100% - 70px);
+}
+.food__list__element:hover .food__list__element__confirm-btn {
+  right: 0;
+}
+.food__list__element:hover .food__list__element__confirm-btn__icon {
+  animation-name: icon-spinning;
+  animation-duration: 0.5s;
+}
+.food__list__element__container {
+  display: flex;
+  background-color: #fff;
+  width: 100%;
   padding: 13px;
+  transition-duration: 0.5s;
 }
-.food__list__element__text-zone {
-  margin-right: 30px;
+.food__list__element__container__menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-.food__list__element__text-zone h4 {
+.food__list__element__container__menu__text-zone {
+  overflow: hidden;
+}
+.food__list__element__container__menu__text-zone h4 {
   margin-bottom: 3px;
   font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.food__list__element__price-zone {
+.food__list__element__container__menu__text-zone p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.food__list__element__container__menu__price-zone {
   display: flex;
   align-items: flex-end;
   font-weight: bold;
+  margin-left: 13px;
+}
+.food__list__element__confirm-btn {
+  background-color: #99E2D0;
+  width: 70px;
+  height: 100%;
+  border-radius: 0px 20px 20px 0px;
+  position: absolute;
+  right: -70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+.food__list__element__confirm-btn__icon {
+  color: #fff;
+}
+@keyframes icon-spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .back-arrow {
@@ -333,7 +409,7 @@ footer h5 {
   font-size: 1.8em;
   font-family: Shrikhand;
 }
-.menu .top-menu i {
+.menu .top-menu .like-btn {
   display: flex;
   align-items: center;
   padding-right: 15px;
@@ -354,7 +430,7 @@ footer h5 {
   justify-content: center;
   align-items: center;
   animation: disappear 0.1s;
-  animation-delay: 1.5s;
+  animation-delay: 0.2s;
   animation-fill-mode: forwards;
 }
 .spinner__dual-ring {
@@ -371,7 +447,7 @@ footer h5 {
   border-radius: 50%;
   border: 6px solid #fff;
   border-color: #9356DC transparent #9356DC transparent;
-  animation: loading 1.5s linear;
+  animation: loading 0.2s linear;
 }
 
 @keyframes disappear {
@@ -394,7 +470,7 @@ footer h5 {
     transform: rotate(1000deg);
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .fonctionnement {
     order: 2;
   }
@@ -424,7 +500,7 @@ footer h5 {
     gap: 36px;
   }
   .restaurants__bloc {
-    width: 48%;
+    width: 47%;
   }
   footer h5 {
     display: flex;
@@ -436,7 +512,7 @@ footer h5 {
     justify-content: space-around;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   /* .food__list {
        flex-direction: row;
        justify-content: space-between;

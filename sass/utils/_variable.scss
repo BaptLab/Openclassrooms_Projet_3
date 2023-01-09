@@ -15,11 +15,16 @@ $components-shadow :0px 5px 10px rgba(179, 179, 179, 0.719);
 
 //Others
 
-
-$spinner-delay : 1.5s;
+$slide-time : 0.5s;
+$spinner-delay : 0.2s;
+$like-animation-duration : 0.3s;
 
 //background-colors
 
 $footer-color:#353535;
 $secondary-background-color:rgb(247, 246, 246);
 $primary-background-color:#fff;
+
+//sizes 
+
+$confirm-btn-width : 70px;
