@@ -1,5 +1,4 @@
 main {
-    display: flex;
     flex-direction: column;
 }
 
@@ -66,6 +65,10 @@ nav {
             align-items: center;
             position: relative;
 
+            &--purple {
+                background-color: #f5edff;
+            }
+
             &__numbers {
                 position: absolute;
                 left: -15px;
@@ -85,7 +88,8 @@ nav {
             }   
 
             &__text {
-                margin: 25px 30px 25px 20px
+                margin: 25px 30px 25px 20px;
+                font-weight: bold;
             }
             
         }

@@ -16,7 +16,7 @@ $components-shadow :0px 5px 10px rgba(179, 179, 179, 0.719);
 //Others
 
 $slide-time : 0.5s;
-$spinner-delay : 0.2s;
+$spinner-delay : 1.5s;
 $like-animation-duration : 0.3s;
 
 //background-colors
@@ -28,3 +28,8 @@ $primary-background-color:#fff;
 //sizes 
 
 $confirm-btn-width : 70px;
+$screen-container-max-width : 950px;
+
+//mediaqueries 
+
+$breakpoint-tab: 768px;

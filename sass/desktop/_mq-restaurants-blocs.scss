@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $breakpoint-tab) {
     
     //change of order
     .fonctionnement {order: 2;}
@@ -39,7 +39,7 @@
 
         ul {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
         }
     }
 }

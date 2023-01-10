@@ -1,8 +1,14 @@
 .sub-header {
-    padding: 0 9%;
+    padding: 0 30px;
 }
 
 .fonctionnement, .restaurants, footer, .menu  {
     padding: 0 25px;
 }
 
+@media screen and (min-width: $breakpoint-tab) { 
+    .width-container {
+        @include max-width-container;
+        margin: auto;
+    }
+}

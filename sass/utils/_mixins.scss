@@ -5,3 +5,7 @@
 @mixin slow-appearing-animation {
     animation: slow-appearing 0.8s ease-out $spinner-delay normal both;
 }
+
+@mixin max-width-container {
+    max-width: $screen-container-max-width;
+}

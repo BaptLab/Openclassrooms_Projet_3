@@ -39,7 +39,7 @@
         z-index: auto;
     }
     100% {
-        display: none;
+        visibility: hidden;
         opacity: 0;
         z-index: -2;
     }
@@ -52,6 +52,6 @@
     }
 
     100% {
-        transform: rotate(1000deg);
+        transform: rotate(800deg);
     }
 }

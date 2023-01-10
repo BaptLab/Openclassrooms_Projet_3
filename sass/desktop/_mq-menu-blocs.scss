@@ -1,25 +1,25 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $breakpoint-tab) {
 
 //horizontal menu elements
-   /* .food__list {
-        flex-direction: row;
-        justify-content: space-between;
-
-        &__element {
-            width: 32%;
-        }
-    }
-    */
-
-
-//horizontal menu set-up
-
-.full-menu {
+   /* .full-menu {
     display: flex;
     justify-content: space-between;
     .food {
         width: 31%;
     }
 } 
+    */
+
+
+//horizontal menu set-up
+
+.food__list {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__element {
+        width: 32%;
+    }
+}
 
 }
