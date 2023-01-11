@@ -1,3 +1,5 @@
+
+//auto style resetting
 * {
     margin: 0;
     padding: 0;
@@ -19,8 +21,25 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: inherit;
 }
 
+
+//screen minimal width
 body {
     min-width: 315px;
 }
-//marges 
 
+
+//marges setting
+.sub-header {
+    padding: 0 30px;
+}
+
+.fonctionnement, .restaurants, footer, .menu  {
+    padding: 0 25px;
+}
+
+@media screen and (min-width: $breakpoint-tab) { 
+    .width-container {
+        @include max-width-container;
+        margin: auto;
+    }
+}

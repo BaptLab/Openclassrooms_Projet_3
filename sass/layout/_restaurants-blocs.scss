@@ -56,3 +56,46 @@
         
     }
 
+    
+
+//Tablet & Desktop display
+
+@media screen and (min-width: $breakpoint-tab) {
+
+    .fonctionnement {
+        box-shadow: $components-shadow;
+        &__liste {
+            flex-direction: row;
+            justify-content: space-between;
+            &__element {
+                width: 30%;
+            }
+        }
+    }
+
+    .restaurants__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 36px;
+
+    }
+
+    .restaurants__bloc {
+        width: 47%;
+    }
+
+    footer {
+        h5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+    

@@ -154,3 +154,15 @@
     }
 }
 
+@media screen and (min-width: $breakpoint-tab) {
+
+    .food__list {
+        flex-direction: row;
+        justify-content: space-between;
+    
+        &__element {
+            width: 32%;
+        }
+    }
+    
+    }

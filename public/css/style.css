@@ -230,6 +230,36 @@ nav input {
   font-size: 0.95em;
 }
 
+@media screen and (min-width: 768px) {
+  .fonctionnement {
+    box-shadow: 0px 5px 10px rgba(179, 179, 179, 0.719);
+  }
+  .fonctionnement__liste {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .fonctionnement__liste__element {
+    width: 30%;
+  }
+  .restaurants__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 36px;
+  }
+  .restaurants__bloc {
+    width: 47%;
+  }
+  footer h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 footer {
   background-color: #353535;
   color: #fff;
@@ -395,6 +425,15 @@ footer h5 {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .food__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .food__list__element {
+    width: 32%;
+  }
+}
 .back-arrow {
   position: absolute;
   left: 25px;
@@ -481,65 +520,6 @@ footer h5 {
   }
   100% {
     transform: rotate(800deg);
-  }
-}
-@media screen and (min-width: 768px) {
-  .fonctionnement {
-    order: 2;
-  }
-  .sub-header {
-    order: 1;
-  }
-  .location-btn {
-    order: 3;
-  }
-  .restaurants {
-    order: 4;
-  }
-  .fonctionnement {
-    box-shadow: 0px 5px 10px rgba(179, 179, 179, 0.719);
-  }
-  .fonctionnement__liste {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .fonctionnement__liste__element {
-    width: 30%;
-  }
-  .restaurants__container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 36px;
-  }
-  .restaurants__bloc {
-    width: 47%;
-  }
-  footer h5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  footer ul {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media screen and (min-width: 768px) {
-  /* .full-menu {
-      display: flex;
-      justify-content: space-between;
-      .food {
-          width: 31%;
-      }
-  } 
-      */
-  .food__list {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .food__list__element {
-    width: 32%;
   }
 }
 

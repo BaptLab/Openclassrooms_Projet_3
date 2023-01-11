@@ -1,8 +1,7 @@
 //Set-up
 @import "./utils/variable";
 @import "./utils/mixins";
-@import "./base/setup";
-@import "./base/margin.scss";
+@import "./base/reset";
 
 //blocs
 @import "./layout/header.scss";
@@ -19,10 +18,6 @@
 
 //spinner
 @import "./layout/spinner";
-
-//mediaqueries
-@import "./desktop/mq-restaurants-blocs.scss";
-@import "./desktop/mq-menu-blocs";
 
 
 
