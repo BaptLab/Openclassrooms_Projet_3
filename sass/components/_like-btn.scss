@@ -16,7 +16,7 @@
             content: "\f004";
             font-family: FontAwesome;
             @include gradient; 
-            -webkit-background-clip: text;
+            background-clip: text;
         }
         
         
@@ -29,12 +29,12 @@
         }
     
         30% {
-            scale: (0.8);
+            scale: 0.8;
         }
     
         75% {
             
-            scale: (1.2);
+            scale: 1.2;
         }
     
         100% {

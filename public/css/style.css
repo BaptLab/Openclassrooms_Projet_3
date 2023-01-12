@@ -23,14 +23,6 @@ body {
   min-width: 315px;
 }
 
-.sub-header {
-  padding: 0 30px;
-}
-
-.fonctionnement, .restaurants, footer, .menu {
-  padding: 0 25px;
-}
-
 @media screen and (min-width: 768px) {
   .width-container {
     max-width: 950px;
@@ -75,7 +67,7 @@ main {
   flex-direction: column;
 }
 
-nav {
+.location-btn {
   display: flex;
   justify-content: center;
   padding: 16px 0px;
@@ -83,35 +75,17 @@ nav {
   position: relative;
   z-index: 0;
 }
-nav #location-pin {
+.location-btn #location-pin {
   margin-right: 15px;
 }
-nav input {
+.location-btn input {
   all: unset;
   width: 145px;
   font-weight: bold;
 }
 
-.sub-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  background-color: rgb(247, 246, 246);
-}
-.sub-header .slogan {
-  padding-top: 45px;
-  font-size: 1.8em;
-  font-weight: bold;
-}
-.sub-header .sub-slogan {
-  padding-top: 15px;
-  font-size: 20px;
-  padding-bottom: 30px;
-}
-
 .fonctionnement {
+  padding: 0 25px;
   justify-content: center;
   align-items: center;
 }
@@ -185,6 +159,9 @@ nav input {
   font-weight: bold;
 }
 
+.restaurants {
+  padding: 0 25px;
+}
 .restaurants__bloc {
   display: flex;
   flex-direction: column;
@@ -261,6 +238,7 @@ nav input {
   }
 }
 footer {
+  padding: 0 25px;
   background-color: #353535;
   color: #fff;
 }
@@ -295,7 +273,7 @@ footer h5 {
   content: "\f004";
   font-family: FontAwesome;
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 @keyframes liked-btn {
@@ -440,6 +418,26 @@ footer h5 {
   color: rgb(65, 65, 65);
 }
 
+.sub-header {
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(247, 246, 246);
+}
+.sub-header .slogan {
+  padding-top: 45px;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.sub-header .sub-slogan {
+  padding-top: 15px;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
 .restaurant-img {
   width: 100%;
   height: 250px;
@@ -449,6 +447,7 @@ footer h5 {
 }
 
 .menu {
+  padding: 0 25px;
   margin-top: 210px;
   background-color: rgb(247, 246, 246);
   border-radius: 40px 40px 0px 0px;

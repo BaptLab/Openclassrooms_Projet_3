@@ -10,3 +10,7 @@
     max-width: $screen-container-max-width;
 }
 
+
+@mixin mobile-margin {
+    padding : 0 25px;
+} 

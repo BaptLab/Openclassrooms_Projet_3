@@ -27,16 +27,7 @@ body {
     min-width: 315px;
 }
 
-
-//marges setting
-.sub-header {
-    padding: 0 30px;
-}
-
-.fonctionnement, .restaurants, footer, .menu  {
-    padding: 0 25px;
-}
-
+//Desktop-Tablet marges setting
 @media screen and (min-width: $breakpoint-tab) { 
     .width-container {
         @include max-width-container;

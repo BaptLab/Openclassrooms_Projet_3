@@ -1,6 +1,7 @@
 @import "../utils/variable";
 
 .restaurants {
+    @include mobile-margin;
     &__bloc {
         display: flex;
         flex-direction: column;

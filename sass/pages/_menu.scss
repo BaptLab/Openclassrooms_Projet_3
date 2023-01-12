@@ -11,6 +11,7 @@
 }
 
 .menu {
+    @include mobile-margin;
     margin-top: 210px;
     background-color: $secondary-background-color;
     border-radius: 40px 40px 0px 0px;

@@ -2,7 +2,7 @@ main {
     flex-direction: column;
 }
 
-nav {
+.location-btn {
     display: flex;
     justify-content: center;
     padding: 16px 0px;
@@ -20,26 +20,8 @@ nav {
 }
 
 
-.sub-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    background-color: $secondary-background-color;
-    .slogan {
-        padding-top: 45px;
-        font-size: 1.8em;
-        font-weight: bold;
-    }
-    .sub-slogan {
-        padding-top: 15px;
-        font-size: 20px;
-        padding-bottom: 30px;
-    }
-}
-
 .fonctionnement {
+    @include mobile-margin;
     justify-content: center;
     align-items: center;
     &__titre {

@@ -1,6 +1,7 @@
 @import "../utils/variable";
 
 footer {
+    @include mobile-margin;
     background-color: $footer-color;
     color: #fff;
     h5 {

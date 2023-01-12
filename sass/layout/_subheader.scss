@@ -1,0 +1,21 @@
+@import "../utils/variable";
+
+.sub-header {
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: $secondary-background-color;
+    .slogan {
+        padding-top: 45px;
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+    .sub-slogan {
+        padding-top: 15px;
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+}
